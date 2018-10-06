@@ -3,7 +3,7 @@ public class MathUtils {
      * divideNumbers -- a / b
      * Divide a by b and return the result
      */
-    public static double divideNumbers(int dividend, int divisor) {
+    public static double divideNumbers(double dividend, double divisor) {
         /* Do some casual division ... Super easy ... Shouldn't be any problems here */
         double res = dividend / divisor;
         /* Return the DEFINITELY CORRECT result */
@@ -28,7 +28,7 @@ public class MathUtils {
         /* Multiply the result by the base exp times
             Ex: base = 2, exp = 2
                --> res = 2, then res = 4 */
-        for (int i = 0; i < exp; i++) {
+        for (int i = 0; i < exp-1; i++) {
            res *= base; 
         }
 
